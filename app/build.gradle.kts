@@ -1,5 +1,6 @@
 plugins {
     id("com.android.application")
+    id("com.apollographql.apollo").version("2.4.5")
     id("kotlin-android")
     id("androidx.navigation.safeargs.kotlin")
 }
@@ -49,4 +50,11 @@ dependencies {
     testImplementation("junit:junit:4.13")
     androidTestImplementation("androidx.test.ext:junit:1.1.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.2.0")
+
+    implementation("com.apollographql.apollo:apollo-runtime:2.4.5") // Added
+    implementation("com.apollographql.apollo:apollo-coroutines-support:2.4.5") // Added
+}
+
+apollo {
+    generateKotlinModels.set(true)
 }
