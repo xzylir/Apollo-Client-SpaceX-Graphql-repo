@@ -1,3 +1,5 @@
+I initially got the project files from github so the README is the one already made from the tutorial:
+
 # Apollo Android Tutorial
 
 This is the tutorial application for working with the [Apollo Android SDK](https://github.com/apollographql/apollo-android).
